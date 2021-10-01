@@ -2,20 +2,25 @@ import React, { useState } from 'react';
 
 interface Props {
     placeholder: string,
-    type: string
+    type: string,
+    name: string,
+    helperText?: string
 }
 
 
-const TextField: React.FC<Props> = ({ placeholder, type }) => {
+const TextField: React.FC<Props> = ({ placeholder, type, name, helperText }) => {
     const [text, setText] = useState("");
     return (
         <div>
-            <input
-                onChange={e => setText(e.target.value)}
-                value={text}
-                placeholder={placeholder} 
-                type={type}
-            />
+            <label htmlFor={name}>{name}</label>
+                <input
+                    onChange={e => setText(e.target.value)}
+                    value={text}
+                    name={name}
+                    placeholder={placeholder} 
+                    type={type}
+                />
+                <div>{helperText}</div>
         </div>
     )
     
