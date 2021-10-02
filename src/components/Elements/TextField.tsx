@@ -20,7 +20,7 @@ const TextField: React.FC<Props> = ({ placeholder, type, name, helperText }) => 
                     placeholder={placeholder} 
                     type={type}
                 />
-                <div>{helperText}</div>
+                <small>{helperText}</small>
         </div>
     )
     

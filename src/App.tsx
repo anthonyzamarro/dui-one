@@ -1,6 +1,7 @@
 import './App.css';
 import Form from './components/containers/Form';
 import CTA from './components/elements/CTA';
+import SelectList from './components/elements/SelectList';
 import TextField from './components/elements/TextField';
 
 const App: React.FC = () => {
@@ -29,6 +30,22 @@ const App: React.FC = () => {
             name="password"
             helperText="Must be 10 or more characters"
           />
+          <div className="SelectList__container">
+            <label htmlFor="dob">DATE OF BIRTH:</label>
+            <SelectList 
+              name="DD"
+              numbers={{start: 1, end: 31}}
+            />
+            <SelectList 
+              name="MM"
+              months={['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']}
+            />
+            <SelectList 
+              name="YY"
+              numbers={{start: 1900, end: 2021}}
+            />
+            <small>You need to be 16 or over to use ASOS</small>
+          </div>
         <CTA
           link="www.reddit.com"
           text="JOIN ASOS"
