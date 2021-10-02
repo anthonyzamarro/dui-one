@@ -1,6 +1,7 @@
 import './App.css';
 import Form from './components/containers/Form';
-import CTA from './components/elements/CTA';
+import Button from './components/elements/Button';
+import Checkbox from './components/elements/Checkbox';
 import Radio from './components/elements/Radio';
 import SelectList from './components/elements/SelectList';
 import TextField from './components/elements/TextField';
@@ -56,7 +57,28 @@ const App: React.FC = () => {
               text="mensswear"
             />
           </div>
-        <CTA
+          <div className="checkbox__container">
+            <h3 className="preferences__title">CONTACT PREFERENCES</h3>
+            <h5 className="preferences__subtitle">Tell us which emails you’d like:</h5>
+            <Button
+              link="#"
+              text="SELECT ALL"
+              newWindow={false}
+            />
+            <Checkbox
+              text="DISCOUNTS AND SALES"
+            />
+            <Checkbox
+              text="NEW STUFF"
+            />
+            <Checkbox
+              text="YOUR EXCLUSIVES"
+            />
+            <Checkbox
+              text="ASOS PARTNERS"
+            />
+          </div> 
+        <Button
           link="www.reddit.com"
           text="JOIN ASOS"
           newWindow={true}

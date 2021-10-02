@@ -6,7 +6,7 @@ interface Props {
     newWindow?: boolean
 }
 
-const CTA: React.FC<Props> = ({ text, link, newWindow }) => {
+const Button: React.FC<Props> = ({ text, link, newWindow }) => {
     return (
         <div className="button button__container">
             <a href={link} target={newWindow ? '_blank' : ''} rel="noreferrer">{text}</a>
@@ -14,4 +14,4 @@ const CTA: React.FC<Props> = ({ text, link, newWindow }) => {
     )
 }
 
-export default CTA;
+export default Button;
