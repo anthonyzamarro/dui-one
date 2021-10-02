@@ -26,4 +26,4 @@ const TextField: React.FC<Props> = ({ placeholder, type, name, helperText }) => 
     
 }
 
-export default TextField
+export default TextField;

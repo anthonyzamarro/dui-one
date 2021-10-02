@@ -1,6 +1,7 @@
 import './App.css';
 import Form from './components/containers/Form';
 import CTA from './components/elements/CTA';
+import Radio from './components/elements/Radio';
 import SelectList from './components/elements/SelectList';
 import TextField from './components/elements/TextField';
 
@@ -30,8 +31,8 @@ const App: React.FC = () => {
             name="password"
             helperText="Must be 10 or more characters"
           />
-          <div className="SelectList__container">
-            <label htmlFor="dob">DATE OF BIRTH:</label>
+          <div className="selectlist__container">
+            <h3 className="dob__title">DATE OF BIRTH:</h3>
             <SelectList 
               name="DD"
               numbers={{start: 1, end: 31}}
@@ -45,6 +46,15 @@ const App: React.FC = () => {
               numbers={{start: 1900, end: 2021}}
             />
             <small>You need to be 16 or over to use ASOS</small>
+          </div>
+          <div className="radio__container">
+            <h3 className="interest__title">MOSTLY INTERESTED IN:</h3>
+            <Radio
+              text="womanswear"
+            />
+            <Radio
+              text="mensswear"
+            />
           </div>
         <CTA
           link="www.reddit.com"

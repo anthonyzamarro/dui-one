@@ -14,4 +14,4 @@ const CTA: React.FC<Props> = ({ text, link, newWindow }) => {
     )
 }
 
-export default CTA
+export default CTA;
