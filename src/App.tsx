@@ -1,7 +1,7 @@
 import './App.css';
 import Form from './components/containers/Form';
-import CTA from './components/Elements/CTA';
-import TextField from './components/Elements/TextField';
+import CTA from './components/elements/CTA';
+import TextField from './components/elements/TextField';
 
 const App: React.FC = () => {
   return (
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <CTA
           link="www.reddit.com"
           text="JOIN ASOS"
-          newWindow={false}
+          newWindow={true}
         />
       </Form>
     </div>
