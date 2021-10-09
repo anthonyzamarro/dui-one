@@ -8,7 +8,7 @@ interface Props {
 
 const SignUpWith: React.FC<Props> = ({ title, body }) => {
     return (
-        <div className="signup__container">
+        <section className="signup__container">
             <h2>{title}</h2>
             <Button 
                 text="Google"
@@ -29,7 +29,7 @@ const SignUpWith: React.FC<Props> = ({ title, body }) => {
                 logo="https://via.placeholder.com/50"
             />
             {body}
-        </div>
+        </section>
     )
 }
 
