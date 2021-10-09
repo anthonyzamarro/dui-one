@@ -3,7 +3,7 @@ import Button from "../elements/Button";
 
 const JoinSignIn: React.FC = () => {
     return (
-        <div className="join-signin__container">
+        <section className="join-signin__container">
             <Button 
                 text="JOIN"
                 link="/"
@@ -12,7 +12,7 @@ const JoinSignIn: React.FC = () => {
                 text="SIGN IN"
                 link="/sign-in"
             />
-        </div>
+        </section>
     )
 }
 
