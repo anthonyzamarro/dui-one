@@ -8,7 +8,7 @@ interface Props {
 const Radio: React.FC<Props> = ({ text }) => {
     const [checked, setChecked] = useState(false);
     return (
-        <>
+        <div className="radio__container">
             <input 
                 type="radio"
                 value={text}
@@ -17,7 +17,7 @@ const Radio: React.FC<Props> = ({ text }) => {
                 onClick={() => setChecked(checked)}
             />
             <label htmlFor={text}>{text}</label>
-        </>
+        </div>
     )
 }
 

@@ -3,7 +3,8 @@ import Form from './components/containers/Form';
 import JoinSignIn from './components/containers/JoinSignIn';
 import Legal from './components/containers/Legal';
 import SignUpWith from './components/containers/SignUpWith';
-import Button from './components/Elements/Button';
+import Button from './components/elements/Button';
+
 
 const App: React.FC = () => {
   return (

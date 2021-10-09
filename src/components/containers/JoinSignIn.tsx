@@ -1,9 +1,9 @@
 import React from "react"
-import Button from "../Elements/Button";
+import Button from "../elements/Button";
 
 const JoinSignIn: React.FC = () => {
     return (
-        <div className="join-signin join-signin__container">
+        <div className="join-signin__container">
             <Button 
                 text="JOIN"
                 link="/"
