@@ -1,15 +1,17 @@
 .container, 
 .img__container {
-  max-width: 720px;
+  max-width: 580px;
   width: 100%;
   margin: 0 auto;
 }
 
 .container {
-  padding: 100px 0;
+  padding: 30px;
   background-color: #fff;
 }
 
 .img__container {
   text-align: center;
+  padding: 50px 0 15px 0;
 }
+
