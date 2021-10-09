@@ -1,3 +1,6 @@
+/* 
+  Containers 
+*/
 .container, 
 .img__container {
   max-width: 580px;
@@ -15,3 +18,12 @@
   padding: 50px 0 15px 0;
 }
 
+/* 
+  Join Sign in
+*/
+
+.join-signin__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -22,6 +22,7 @@ const App: React.FC = () => {
           link="www.reddit.com"
           text="JOIN ASOS"
           newWindow={true}
+          type="cta"
         />
       </main>
     </>
