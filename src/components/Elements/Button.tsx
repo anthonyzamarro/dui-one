@@ -9,7 +9,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({ text, link, newWindow, logo }) => {
     return (
-        <div className="button button__container">
+        <div className="button__container">
             {logo ? <img src={logo} alt="text" /> : ''}
             <a href={link} target={newWindow ? '_blank' : ''} rel="noreferrer">{text}</a>
         </div>

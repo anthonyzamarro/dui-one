@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "../Elements/Button";
+import Button from "../elements/Button";
 
 interface Props {
     title: string,
@@ -8,7 +8,7 @@ interface Props {
 
 const SignUpWith: React.FC<Props> = ({ title, body }) => {
     return (
-        <div className="signup signup__container">
+        <div className="signup__container">
             <h2>{title}</h2>
             <Button 
                 text="Google"

@@ -8,7 +8,7 @@ interface Props {
 const Checkbox: React.FC<Props> = ({ text }) => {
     const [checked, setChecked] = useState(false);
     return (
-        <>
+        <div className="checkbox__container">
             <label htmlFor={text}>{text}</label>
             <input 
                 type="checkbox"
@@ -17,7 +17,7 @@ const Checkbox: React.FC<Props> = ({ text }) => {
                 id={text}
                 onClick={() => setChecked(checked)}
             />
-        </>
+        </div>
     )
 }
 
