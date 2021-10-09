@@ -1,9 +1,16 @@
-
-
-.container {
-  max-width: 720px;
+.container, 
+.img__container {
+  max-width: 580px;
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+}
+
+.container {
+  padding: 30px;
   background-color: #fff;
+}
+
+.img__container {
+  text-align: center;
+  padding: 50px 0 15px 0;
 }
