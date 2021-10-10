@@ -1,21 +1,26 @@
 import React from "react";
+import { useLocation } from "react-router";
 import Button from "../elements/Button";
 
-const JoinSignIn: React.FC = () => {
+const Nav: React.FC = () => {
+    let location = useLocation();
+
     return (
-        <section className="join-signin__container">
+        <nav className="nav_container">
             <Button 
                 text="JOIN"
                 link="/"
                 type="link"
+                activeClass={location.pathname === '/' ? 'active' : ''}
             />
             <Button 
                 text="SIGN IN"
                 link="/sign-in"
                 type="link"
+                activeClass={location.pathname === '/sign-in' ? 'active' : ''}
             />
-        </section>
+        </nav>
     )
 }
 
-export default JoinSignIn;
+export default Nav;

@@ -1,5 +1,5 @@
 /* 
-  Containers 
+  Containers start
 */
 .container, 
 .img__container {
@@ -19,11 +19,27 @@
 }
 
 /* 
-  Join Sign in
+  Containers end
 */
 
-.join-signin__container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+/* 
+  Nav start
+*/
+
+.nav_container .button__container {
+  width: 100%;
+  text-align: center;
 }
+
+
+.btn__link-active:after {
+  content: "";
+  display: block;
+  padding-top: 12px;
+  border-bottom: 2px solid dodgerblue;
+  width: 100%;
+}
+
+/* 
+  Nav end
+*/

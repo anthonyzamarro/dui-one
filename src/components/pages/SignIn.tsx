@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../containers/Form";
-import JoinSignIn from "../containers/JoinSignIn";
+import Nav from "../containers/Nav";
 import Layout from "../containers/Layout";
 import SignUpWith from "../containers/SignUpWith";
 import Button from "../elements/Button";
@@ -9,7 +9,7 @@ import TextField from "../elements/TextField";
 const SignIn: React.FC = () => {
     return (
         <Layout>
-            <JoinSignIn />
+            <Nav />
             <Form>
                 <TextField
                     type="email"

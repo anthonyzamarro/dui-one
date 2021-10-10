@@ -1,26 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 interface Props {
     text: string,
     link: string,
+    activeClass?: string,
     type?: string
     newWindow?: boolean,
-    logo?: string
+    logo?: string,
 }
 
-const Button: React.FC<Props> = ({ text, link, newWindow, logo, type }) => {
+const Button: React.FC<Props> = ({ text, link, newWindow, logo, type, activeClass }) => {
+    
     return (
         <div className="button__container">
             {logo ? <img src={logo} alt="text" /> : ''}
-                <Link 
-                    to={link} 
+                <a 
+                    href={link} 
                     target={newWindow ? '_blank' : ''} 
                     rel="noreferrer"
-                    className={`btn-${type}`}
+                    className={`btn__${type}-${activeClass}`}
                 >
                     {text}
-                </Link>
+                </a>
         </div>
     )
 }

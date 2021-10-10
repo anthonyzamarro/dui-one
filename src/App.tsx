@@ -9,6 +9,9 @@ import SignIn from './components/pages/SignIn';
 const App: React.FC = () => {
   return (
     <>
+      <section className="img__container">
+        <img src="https://via.placeholder.com/50" alt="logo" />
+      </section>
       <Router>
         <Switch>
           <Route exact path="/">

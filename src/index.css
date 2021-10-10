@@ -16,9 +16,17 @@ a {
   text-decoration: none;
 }
 
-
-
 fieldset {
   border: none;
 }
 
+
+/* 
+  Join Sign in
+*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
