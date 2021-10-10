@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React from "react";
 import Button from "../elements/Button";
 
 const JoinSignIn: React.FC = () => {
-    const [active, setActive] = useState();
     return (
         <section className="join-signin__container">
             <Button 
