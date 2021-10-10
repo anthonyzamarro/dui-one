@@ -48,9 +48,6 @@
 
 .btn__link-active:after {
   border-bottom: 2px solid dodgerblue;
-}
-
-.btn__link-active {
   cursor: default;
   opacity: 1;
 }
@@ -61,16 +58,31 @@
   border-right: 2px solid #ddd;
   height: 25px;
   position: absolute;
-  top: 0;
+  top: 1em;
 }
 
 /* 
   Nav end
 */
 
+
+
+/* 
+  Sign Up start
+*/
+
+.signup__container {
+  text-align: center;
+}
+
+/* 
+  Sign up end
+*/
+
 /* 
   Button Link start
 */
+
 .link {
   font-weight: 700;
   color: #000;
