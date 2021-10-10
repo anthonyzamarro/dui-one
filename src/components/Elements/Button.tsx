@@ -3,13 +3,14 @@ import React from "react";
 interface Props {
     text: string,
     link: string,
-    activeClass?: string,
+    activeClass?: boolean,
     type?: string
     newWindow?: boolean,
     logo?: string,
 }
 
 const Button: React.FC<Props> = ({ text, link, newWindow, logo, type, activeClass }) => {
+    const isActive = activeClass ? '-active' : '';
     
     return (
         <div className="button__container">
@@ -18,7 +19,7 @@ const Button: React.FC<Props> = ({ text, link, newWindow, logo, type, activeClas
                     href={link} 
                     target={newWindow ? '_blank' : ''} 
                     rel="noreferrer"
-                    className={`btn__${type}-${activeClass}`}
+                    className={`btn__${type}${isActive} ${type}`}
                 >
                     {text}
                 </a>

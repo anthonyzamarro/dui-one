@@ -114,12 +114,14 @@ const Home: React.FC = () => {
             </div> 
         </Form>
         <Legal />
-        <Button
-            link="www.reddit.com"
-            text="JOIN ASOS"
-            newWindow={true}
-            type="cta"
-        />
+        <div className="cta__container">
+            <Button
+                link="www.reddit.com"
+                text="JOIN ASOS"
+                newWindow={true}
+                type="cta"
+            />
+        </div>
     </Layout>
   )
 }

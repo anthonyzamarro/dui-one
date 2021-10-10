@@ -26,20 +26,80 @@
   Nav start
 */
 
-.nav_container .button__container {
+.nav__container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.nav__container .button__container {
   width: 100%;
   text-align: center;
 }
 
-
+.btn__link:after,
 .btn__link-active:after {
   content: "";
   display: block;
-  padding-top: 12px;
-  border-bottom: 2px solid dodgerblue;
+  padding-top: 22px;
+  border-bottom: 2px solid #ddd;
   width: 100%;
+}
+
+
+.btn__link-active:after {
+  border-bottom: 2px solid dodgerblue;
+}
+
+.btn__link-active {
+  cursor: default;
+  opacity: 1;
+}
+
+.nav__divider:after {
+  content: "";
+  display: block;
+  border-right: 2px solid #ddd;
+  height: 25px;
+  position: absolute;
+  top: 0;
 }
 
 /* 
   Nav end
+*/
+
+/* 
+  Button Link start
+*/
+.link {
+  font-weight: 700;
+  color: #000;
+}
+
+
+/* 
+  Button Link end
+*/
+
+/* 
+  Button CTA start
+*/
+
+.cta__container {
+  text-align: center;
+}
+
+.btn__cta {
+  padding: 12px 60px;
+  background-color: black;
+  color: #fff;
+  font-weight: 900;
+}
+
+.btn__cta:hover {
+  opacity: .5;
+}
+
+/* 
+  Button CTA end
 */

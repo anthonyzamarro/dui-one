@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: .5;
+}
+
 fieldset {
   border: none;
 }
