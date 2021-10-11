@@ -49,15 +49,15 @@ const Home: React.FC = () => {
                     />
                     <TextField 
                         type="text"
-                        name="first name"
+                        name="FIRST NAME:"
                     />
                     <TextField 
                         type="text"
-                        name="last name"
+                        name="LAST NAME:"
                     />
                     <TextField 
                         type="password"
-                        name="password"
+                        name="PASSWORD:"
                         helperText="Must be 10 or more characters"
                     />
                 </fieldset>
@@ -74,11 +74,11 @@ const Home: React.FC = () => {
                     months={['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']}
                 />
                 <SelectList 
-                    name="YY"
+                    name="YYYY"
                     numbers={{start: 1900, end: 2021}}
                 />
-                </fieldset>
                 <small>You need to be 16 or over to use ASOS</small>
+                </fieldset>
             </div>
             <div className="radio__container">
                 <fieldset>

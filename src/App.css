@@ -141,6 +141,29 @@
   width: 100%;
 }
 
+.selectlist__container {
+  text-align: left;
+}
+
+.dob__title,
+.selectlist__container  small {
+  display: block;
+  /* text-align: left; */
+}
+
+.selectlist__container-inner {
+  display: inline-block;
+  margin: 4px 12px 8px 0;
+}
+
+.selectlist__container-inner select {
+  padding: 12px;
+  width: 100%;
+}
+
+.months__container {
+  width: 190px;
+}
 
 
 
