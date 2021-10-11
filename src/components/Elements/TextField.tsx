@@ -10,9 +10,10 @@ interface Props {
 const TextField: React.FC<Props> = ({ type, name, helperText }) => {
     const [text, setText] = useState("");
     return (
-        <div className={`${type}-input__container-inner`}>
+        <div className={`input__container ${type}-input__container-inner`}>
             <label htmlFor={name}>{name}</label>
                 <input
+                    className="input"
                     onChange={e => setText(e.target.value)}
                     value={text}
                     name={name}

@@ -37,12 +37,14 @@ const Home: React.FC = () => {
                 logo="https://via.placeholder.com/50"
             />
         </SignUpWith>
+    <main className="main__container">
         <Form>
-            <div className="input__container">
-                <fieldset>
+            <div className="signup__form__container">
+                <h2 className="signup__form__title">OR SIGN UP WITH</h2>
+                <fieldset className="signup__form__inputs">
                     <TextField 
                         type="email"
-                        name="email"
+                        name="EMAIL ADDRESS:"
                         helperText="We'll send your order confirmation here"
                     />
                     <TextField 
@@ -122,7 +124,9 @@ const Home: React.FC = () => {
                 type="cta"
             />
         </div>
+    </main>
     </Layout>
+    
   )
 }
 

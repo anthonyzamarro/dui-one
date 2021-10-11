@@ -1,6 +1,10 @@
 /* 
   Containers start
 */
+.main__container {
+
+}
+
 .container, 
 .img__container {
   max-width: 580px;
@@ -79,6 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 24px;
   
 }
@@ -88,7 +93,7 @@
   align-items: center;
   flex: 1;
   padding: 4px 24px;
-  margin: 0 12px;
+  margin: 8px 12px;
   border: 2px solid #ddd;
 }
 
@@ -112,6 +117,38 @@
 
 /* 
   Button Link end
+*/
+
+/* 
+  Form start
+*/
+
+.form__container {
+  text-align: center;
+}
+
+.signup__form__inputs {
+  max-width: 400px;
+  margin: auto;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input { 
+  margin: 12px 0;
+  padding: 12px;
+  width: 100%;
+}
+
+
+
+
+/* 
+  Form end 
 */
 
 /* 
