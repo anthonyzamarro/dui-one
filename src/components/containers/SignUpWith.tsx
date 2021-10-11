@@ -9,7 +9,9 @@ const SignUpWith: React.FC<Props> = ({ title, body, children }) => {
     return (
         <section className="signup__container">
             <h2>{ title }</h2>
-            { children } 
+            <div className="signup__container__inner">
+                { children } 
+            </div>
             { body }
         </section>
     )

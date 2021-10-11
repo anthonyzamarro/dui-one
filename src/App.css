@@ -72,7 +72,28 @@
 */
 
 .signup__container {
+  margin: 32px 0;
   text-align: center;
+}
+.signup__container__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  
+}
+
+.signup__container__inner .button__container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 4px 24px;
+  margin: 0 12px;
+  border: 2px solid #ddd;
+}
+
+.signup__container__inner .button__container a {
+  padding-left: 8px;
 }
 
 /* 

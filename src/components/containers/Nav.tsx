@@ -7,19 +7,19 @@ const Nav: React.FC = () => {
 
     return (
         <nav className="nav__container">
-            <Button 
-                text="JOIN"
-                link="/"
-                type="link"
-                activeClass={ location.pathname === '/' && true }
-            />
+                <Button 
+                    text="JOIN"
+                    link="/"
+                    type="link"
+                    activeClass={ location.pathname === '/' && true }
+                />
             <div className="nav__divider"></div>
-            <Button 
-                text="SIGN IN"
-                link="/sign-in"
-                type="link"
-                activeClass={ location.pathname === '/sign-in' && true }
-            />
+                <Button 
+                    text="SIGN IN"
+                    link="/sign-in"
+                    type="link"
+                    activeClass={ location.pathname === '/sign-in' && true }
+                />
         </nav>
     )
 }
