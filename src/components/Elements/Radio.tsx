@@ -1,20 +1,22 @@
-import React, { useState } from "react"
+import React from "react"
 
 interface Props {
-    text: string
-    
+    text: string,
+    name: string
 }
 
-const Radio: React.FC<Props> = ({ text }) => {
-    const [checked, setChecked] = useState(false);
+const Radio: React.FC<Props> = ({ text, name }) => {
+    let toggle = (e: object) => {
+        console.log(e, 'onChange')
+    }
+
     return (
-        <div className="radio__container__inner">
+        <div className="radio__container__inner" onChange={(e: object) => toggle(e)}>
             <input 
                 type="radio"
                 value={text}
-                name={text}
+                name={name}
                 id={text}
-                onClick={() => setChecked(checked)}
             />
             <label htmlFor={text}>{text}</label>
         </div>

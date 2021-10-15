@@ -84,10 +84,12 @@ const Home: React.FC = () => {
                 <fieldset className="fieldset__container-radio">
                     <label className="interest__title">MOSTLY INTERESTED IN:</label>
                     <Radio
-                        text="womanswear"
+                        text="Womanswear"
+                        name="gender"
                     />
                     <Radio
-                        text="mensswear"
+                        text="Mensswear"
+                        name="gender"
                     />
                 </fieldset>
             </div>
