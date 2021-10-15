@@ -18,8 +18,9 @@ const SelectList: React.FC<SelectListProps> = ({name, numbers, months}) => {
         }
         if (name === 'YY') numbersArray.reverse();
     }
+    
     return (
-        <div className={`selectlist__container-inner ${months !== undefined ? 'months__container' : ''}`}>
+        <div className={`selectlist__container-inner ${name}__container`}>
             <select value={value} onChange={() => setValue(value)}>
                 <option defaultValue={name}>{name}</option>
                 {

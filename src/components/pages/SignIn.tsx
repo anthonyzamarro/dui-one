@@ -31,6 +31,7 @@ const SignIn: React.FC = () => {
             <SignUpWith
                 title="OR SIGN IN WITH..."
                 body=""
+                wrap={true}
             >
                 <Button 
                 text="GOOGLE"
