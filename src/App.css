@@ -200,6 +200,22 @@
 }
 
 /* checkboxes */
+.preferences__title_button__container > * {
+  margin: 0;
+}
+
+.preferences__title_button__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 18px;
+}
+
+.checkbox__container {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* 
   Form end 
