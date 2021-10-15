@@ -8,6 +8,7 @@ import Checkbox from '../elements/Checkbox';
 import Radio from '../elements/Radio';
 import SelectList from '../elements/SelectList';
 import TextField from '../elements/TextField';
+import Modal from '../containers/Modal';
 
 
 const Home: React.FC = () => {
@@ -121,15 +122,19 @@ const Home: React.FC = () => {
                 </fieldset>
             </div> 
         </Form>
-        <Legal />
-        <div className="cta__container">
-            <Button
-                link="www.reddit.com"
-                text="JOIN ASOS"
-                newWindow={true}
-                type="cta"
-            />
-        </div>
+        <Modal 
+            targetText="Tell me more about these..."
+        />
+        <Legal> 
+            <div className="cta__container">
+                <Button
+                    link="www.reddit.com"
+                    text="JOIN ASOS"
+                    newWindow={true}
+                    type="cta"
+                />
+            </div>
+        </Legal>
     </main>
     </Layout>
     
