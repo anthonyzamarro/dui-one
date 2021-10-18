@@ -9,6 +9,8 @@ import Radio from '../elements/Radio';
 import SelectList from '../elements/SelectList';
 import TextField from '../elements/TextField';
 import Modal from '../containers/Modal';
+import Clickable from '../elements/Clickable';
+import Parent from '../containers/Parent';
 
 
 const Home: React.FC = () => {
@@ -95,31 +97,36 @@ const Home: React.FC = () => {
                 </fieldset>
             </div>
             <div className="checkbox__container">
-                <fieldset className="fieldset__container-checkbox">
-                    <div className="preferences__title_button__container">
-                        <h3 className="preferences__title">CONTACT PREFERENCES</h3>
-                        <h5 className="preferences__subtitle">Tell us which emails you’d like:</h5>
-                        <Button
-                            link=""
-                            text="SELECT ALL"
-                            newWindow={false}
-                        />
-                    </div>
-                    <div className="checkboxes">
-                        <Checkbox
-                            text="DISCOUNTS AND SALES"
-                        />
-                        <Checkbox
-                            text="NEW STUFF"
-                        />
-                        <Checkbox
-                            text="YOUR EXCLUSIVES"
-                        />
-                        <Checkbox
-                            text="ASOS PARTNERS"
-                        />
-                    </div>
-                </fieldset>
+                <Parent>
+                    <fieldset className="fieldset__container-checkbox">
+                        <div className="preferences__title_button__container">
+                            <h3 className="preferences__title">CONTACT PREFERENCES</h3>
+                            <h5 className="preferences__subtitle">Tell us which emails you’d like:</h5>
+                            {/* <Button
+                                link=""
+                                text="SELECT ALL"
+                                newWindow={false}
+                            /> */}
+                            <Clickable 
+                                text="SELECT ALL"
+                            />
+                        </div>
+                        <div className="checkboxes">
+                            <Checkbox
+                                text="DISCOUNTS AND SALES"
+                            />
+                            <Checkbox
+                                text="NEW STUFF"
+                            />
+                            <Checkbox
+                                text="YOUR EXCLUSIVES"
+                            />
+                            <Checkbox
+                                text="ASOS PARTNERS"
+                            />
+                        </div>
+                    </fieldset>
+                </Parent>
             </div> 
         </Form>
         <Modal 

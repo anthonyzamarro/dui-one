@@ -11,6 +11,10 @@ interface Props {
 
 const Button: React.FC<Props> = ({ text, link, newWindow, logo, type, activeClass }) => {
     const isActive = activeClass ? '-active' : '';
+
+    const getValue = (e: object) => {
+        console.log(e);
+    }
     
     return (
         <div className="button__container">
@@ -20,6 +24,7 @@ const Button: React.FC<Props> = ({ text, link, newWindow, logo, type, activeClas
                     target={newWindow ? '_blank' : ''} 
                     rel="noreferrer"
                     className={`btn__${type}${isActive} ${type}`}
+                    onChange={(e: object) => getValue(e)}
                 >
                     {text}
                 </a>
