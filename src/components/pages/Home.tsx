@@ -109,6 +109,7 @@ const Home: React.FC = () => {
                             /> */}
                             <Clickable 
                                 text="SELECT ALL"
+                                thing={(e: string) => e}
                             />
                         </div>
                         <div className="checkboxes">

@@ -2,12 +2,13 @@ import React from "react";
 
 interface Props {
     text: string,
+    thing: (blah: string) => void; // arrow function
 }
 
-const Clickable: React.FC<Props> = ({ text }) => {
+const Clickable: React.FC<Props> = ({ text, thing }) => {
 
     const getValue = (e: object) => {
-        console.log(e);
+        console.log('child', e);
     }
     
     return (
