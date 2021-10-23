@@ -1,0 +1,1 @@
+type SelectAll = (checked: boolean) => void;

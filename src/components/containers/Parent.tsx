@@ -2,19 +2,16 @@ import React from "react";
 import Clickable from "../elements/Clickable"
 
 interface Props {
+    selectAll: SelectAll; // arrow function
 }
 
-const Parent: React.FC<Props> = () => {
+const Parent: React.FC<Props> = ({ selectAll }) => {
 
-    const getValue = (e: string) => {
-        console.log('parent', e);
-    }
-    
     return (
         <div className="parent__container">
             <Clickable
                 text="SELECT ALL"
-                thing={(blah: string) => getValue(blah)}
+                selectAll={selectAll}
             />
         </div>
     )
