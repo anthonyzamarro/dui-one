@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 
 interface Props {
-    text: string
-    
+    text: string,
+    check: boolean
 }
 
-const Checkbox: React.FC<Props> = ({ text }) => {
-    const [checked, setChecked] = useState(false);
+const Checkbox: React.FC<Props> = ({ text, check }) => {
+    const [checked, setChecked] = useState();
     return (
         <div className="checkbox__container">
             <label htmlFor={text}>{text}</label>
@@ -15,7 +15,7 @@ const Checkbox: React.FC<Props> = ({ text }) => {
                 value={text}
                 name={text}
                 id={text}
-                onClick={() => setChecked(checked)}
+                // onClick={() => setChecked()}
             />
         </div>
     )

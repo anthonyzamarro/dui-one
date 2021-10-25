@@ -2,10 +2,9 @@ import Form from '../containers/Form';
 import Legal from '../containers/Legal';
 import Modal from '../containers/Modal';
 import Nav from '../containers/Nav';
-import Parent from '../containers/Parent';
+import Preferences from '../containers/Preferences';
 import SignUpWith from '../containers/SignUpWith';
 import Button from '../elements/Button';
-import Checkbox from '../elements/Checkbox';
 import Radio from '../elements/Radio';
 import SelectList from '../elements/SelectList';
 import TextField from '../elements/TextField';
@@ -13,9 +12,7 @@ import Layout from '../layout/Layout';
 
 
 const Home: React.FC = () => {
-    const selectAll: SelectAll = (checked) => {
-        console.log('home: ', checked)
-    }
+
 
     return (
     <Layout>
@@ -100,34 +97,7 @@ const Home: React.FC = () => {
                 </fieldset>
             </div>
             <div className="checkbox__container">
-                <Parent
-                    selectAll={selectAll}
-                >
-                    <fieldset className="fieldset__container-checkbox">
-                        <div className="preferences__title_button__container">
-                            <h3 className="preferences__title">CONTACT PREFERENCES</h3>
-                            <h5 className="preferences__subtitle">Tell us which emails you’d like:</h5>
-                            {/* <Clickable 
-                                text="SELECT ALL"
-                                fn={fn}
-                            /> */}
-                        </div>
-                        <div className="checkboxes">
-                            <Checkbox
-                                text="DISCOUNTS AND SALES"
-                            />
-                            <Checkbox
-                                text="NEW STUFF"
-                            />
-                            <Checkbox
-                                text="YOUR EXCLUSIVES"
-                            />
-                            <Checkbox
-                                text="ASOS PARTNERS"
-                            />
-                        </div>
-                    </fieldset>
-                </Parent>
+                <Preferences />
             </div> 
         </Form>
         <Modal 
