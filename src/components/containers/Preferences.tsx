@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Checkbox from "../elements/Checkbox";
 import Clickable from "../elements/Clickable"
 
 
 const Parent: React.FC = () => {
+    const [checked, setChecked] = useState(false);
+    
     const selectAll: SelectAll = () => {
-        console.log('Preferences: ')
+        setChecked(!checked);
     }
 
     return (
@@ -22,19 +24,19 @@ const Parent: React.FC = () => {
                         <div className="checkboxes">
                             <Checkbox
                                 text="DISCOUNTS AND SALES"
-                                bool={false}
+                                check={checked}                       
                             />
                             <Checkbox
                                 text="NEW STUFF"
-                                bool={false}
+                                check={checked}
                             />
                             <Checkbox
                                 text="YOUR EXCLUSIVES"
-                                bool={true}
+                                check={checked}
                             />
                             <Checkbox
                                 text="ASOS PARTNERS"
-                                bool={true}
+                                check={checked}
                             />
                         </div>
                     </fieldset>
